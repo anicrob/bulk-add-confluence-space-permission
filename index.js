@@ -6,7 +6,6 @@ console.log = function (d) {
   log_file.write(util.format(d) + "\n");
   log_stdout.write(util.format(d) + "\n");
 };
-
 const addConfluencePermissions = async () => {
   const spaceKeys = await getSpaceIds();
   const bodyData = {
